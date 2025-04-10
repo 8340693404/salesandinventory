@@ -25,26 +25,25 @@ import com.sales_and_inventory_objectutility.Summarypage;
 @Listeners(com.sales_and_inventory_Genericutility.ListenerUtility.class)
 public class CustomerTest extends BaseClass {
 	@Test(groups="smoke")
-	public void CustomerpageTest() throws Throwable {
+	public void Customerpage_Test() throws Throwable {
 		 ExcelUtility eLib=new ExcelUtility();
 
 		String Firstname=eLib.getDataFromExcel("Sheet1",1,0);
 		String Lastname=eLib.getDataFromExcel("Sheet1",1,1)+jlib.getRandomNumber();
 
-		 LoginPage lp=new  LoginPage(driver);
+		 
 		 lp.loginAsAdmin();
-		 Createcustomer cc=new Createcustomer(driver);
 		 try {
-		 cc.getCustomerbtn().click();
-		 cc.getCreatecustomerbtn().click(); 
+		 cct.getCustomerbtn().click();
+		 cct.getCreatecustomerbtn().click(); 
 			
-			cc.getFirstnamebtn().sendKeys(Firstname);
-			cc.getLastnamebtn().sendKeys(Lastname);
+			cct.getFirstnamebtn().sendKeys(Firstname);
+			cct.getLastnamebtn().sendKeys(Lastname);
 			Thread.sleep(2000);
 			String Phonenumber=eLib.getDataFromExcel("Sheet1",1,2);
-			cc.getPhonebtn().sendKeys(Phonenumber);
+			cct.getPhonebtn().sendKeys(Phonenumber);
 			Thread.sleep(3000);
-			cc.getSavebtn().click();
+			cct.getSavebtn().click();
 			Thread.sleep(2000);
 		 }
 		 catch(Exception e)

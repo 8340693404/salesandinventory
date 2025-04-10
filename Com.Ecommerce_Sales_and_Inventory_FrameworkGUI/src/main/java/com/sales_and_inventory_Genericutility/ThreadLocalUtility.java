@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.ExtentTest;
 
 public class ThreadLocalUtility {
-	public static ThreadLocal<WebDriver>driver=new ThreadLocal<WebDriver>();
-	public static ThreadLocal<ExtentTest>test=new ThreadLocal<ExtentTest>();
+	private static final ThreadLocal<WebDriver>driver=new ThreadLocal<>();
+	private static final ThreadLocal<ExtentTest>test=new ThreadLocal<>();
 	public static WebDriver getDriver() {
 		return driver.get();
 	}
@@ -18,6 +18,17 @@ public class ThreadLocalUtility {
 	}
 	public static void setTest(ExtentTest actTest) {
 		test.set(actTest);
+	}
+	public static void removeDriver()
+	{
+		driver.remove();
+	}
+	public static void removeTest() {
+		test.remove();
+	}
+	public static void clearAll() {
+		removeDriver();
+		removeTest();
 	}
 
 	

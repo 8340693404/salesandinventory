@@ -17,8 +17,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ListenerUtility implements ISuiteListener,ITestListener{
-	public ExtentReports report;
-	public ExtentTest test;
+	private static ExtentReports report;
+	private static ExtentSparkReporter spark;
 	
 	@Override
 	public void onStart(ISuite suite) {
@@ -49,8 +49,9 @@ public class ListenerUtility implements ISuiteListener,ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		
 		String testname=result.getName();
-		test=report.createTest(testname);
+		ExtentTest test=report.createTest(testname);
 		test.log(Status.INFO, testname+" execution started");
 		ThreadLocalUtility.setTest(test);
 	}
@@ -63,6 +64,7 @@ public class ListenerUtility implements ISuiteListener,ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+		ExtentTest test=ThreadLocalUtility.getTest();
 		TakesScreenshot screenshot=(TakesScreenshot)ThreadLocalUtility.getDriver();
 		String file=screenshot.getScreenshotAs(OutputType.BASE64);
 		test.addScreenCaptureFromBase64String(file, "errorfile");

@@ -13,76 +13,59 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.sales_and_inventory_objectutility.Createcustomer;
+import com.sales_and_inventory_objectutility.Deleteproductpage;
 import com.sales_and_inventory_objectutility.Homepage;
-
+import com.sales_and_inventory_objectutility.LoginPage;
+import com.sales_and_inventory_objectutility.Summarypage;
+import com.sales_and_inventory_objectutility.pospage;
+import com.sales_and_inventory_objectutility.suppilerpage;
 
 public class BaseClass {
-	
-	public FileUtility flib = new  FileUtility();
+
+	public FileUtility flib = new FileUtility();
 	public WebDriverUtility wlib = new WebDriverUtility();
-	public JavaUtility jlib=new JavaUtility();
-   
-	public static  WebDriver sdriver ;
-	public WebDriver driver ;
-		
-	
+	public JavaUtility jlib = new JavaUtility();
+	public ExcelUtility eLib=new ExcelUtility();
+	public Createcustomer cct;
+	public Deleteproductpage dpp;
+	public Homepage hp;
+	public LoginPage lp;
+	public pospage pp;
+	public Summarypage sp;
+	public suppilerpage spp;
+	WebDriver driver;
+
 	@Parameters("BROWSER")
-	@BeforeClass(groups = {"regressionTest","smokeTest"})
-	public void configBC(@Optional("chrome") String browser) throws Throwable  {
-		System.out.println("====Launch the BROWSER===");
+	@BeforeMethod(alwaysRun = true)
+	public void configBM(@Optional("chrome")String BROWSER) throws Throwable {
+		 driver=wlib.getDriver(BROWSER);
+		ThreadLocalUtility.setDriver(driver);
+		cct =new Createcustomer(driver);
+		dpp=new Deleteproductpage(driver);
+		hp=new Homepage(driver);
+		lp=new LoginPage(driver);
+		pp=new pospage(driver);
+		sp=new Summarypage(driver);
+		spp=new suppilerpage(driver);
 		
-		//String BROWSER = flib.getDataFromPropertiesFile("browser");
-		String BROWSER=browser;
-			System.out.println("Browser:"+BROWSER);
-	    if (BROWSER.equals("chrome")) {
-			driver = new ChromeDriver();
-		} else if (BROWSER.equals("firefox")) {
-			driver = new FirefoxDriver();
-		} else if (BROWSER.equals("edge")) {
-			driver = new EdgeDriver();
-		} else {
-			driver = new ChromeDriver();
-	    }
-	
-	       sdriver = driver;
-	       
-        }
-
-
-	@BeforeMethod(groups = {"regressionTest","smokeTest"})
-	public void configBM() throws Throwable  {
 		System.out.println("=====login to appliction=====");
 		wlib.MaximizePage(driver);
-	
-		wlib.WaitForPageToLoad(driver);
-		String URL=flib.getDataFromPropertiesFile("url");
-		driver.get(URL);
-		
 
-		
-		
-		
-			
+		wlib.WaitForPageToLoad(driver);
+		String URL = flib.getDataFromPropertiesFile("url");
+		driver.get(URL);
 	}
-	@AfterMethod(groups = {"regressionTest","smokeTest"})
+
+	@AfterMethod(alwaysRun = true)
 	public void configAM() {
 		System.out.println("======logout of the application====");
-//		Homepage hp=new Homepage(driver);
-//		hp.getLogout();
-		
-		
+		WebDriver driver=ThreadLocalUtility.getDriver();
+		if(driver!=null) {
+			driver.quit();
+		}
+		ThreadLocalUtility.removeDriver();
+
 	}
-	@AfterClass( groups = {"regressionTest","smokeTest"})
-	public void configAC() {
-		System.out.println("======close the BROWSER=====");
-		driver.quit();
-
-		
-	
-	
-
-}
-	
-	
 
 }
