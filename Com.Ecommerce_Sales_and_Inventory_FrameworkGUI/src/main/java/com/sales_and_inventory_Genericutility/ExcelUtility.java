@@ -9,7 +9,7 @@ public class ExcelUtility {
 	//read the data from excel
 	
 	public String getDataFromExcel(String sheetname,int rownum,int celnum) throws Throwable {
-		FileInputStream fis = new FileInputStream("C:\\Users\\ASUS\\eclipse-workspace\\Com.Ecommerce_Sales_and_Inventory_FrameworkGUI\\AppCommonData\\Framework.xlsx");
+		FileInputStream fis = new FileInputStream("./AppCommonData/Framework.xlsx");
 		
 		
 		Workbook wb=WorkbookFactory.create(fis);

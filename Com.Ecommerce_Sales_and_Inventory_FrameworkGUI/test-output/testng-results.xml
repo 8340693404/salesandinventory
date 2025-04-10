@@ -1,247 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T04:04:37Z" name="Suite" finished-at="2025-04-10T04:05:41Z" duration-ms="64224">
+  <suite started-at="2025-04-10T10:46:06 IST" name="Suite" finished-at="2025-04-10T10:47:29 IST" duration-ms="83305">
     <groups>
       <group name="smoke">
-        <method signature="Admincheckout.AdmincheckoutTest()[pri:0, instance:salesandinv.Admincheckout@492691d7]" name="AdmincheckoutTest" class="salesandinv.Admincheckout"/>
-        <method signature="CustomerTest.CustomerpageTest()[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" name="CustomerpageTest" class="salesandinv.CustomerTest"/>
+        <method signature="Admincheckout.AdmincheckoutTest()[pri:0, instance:salesandinv.Admincheckout@534a5a98]" name="AdmincheckoutTest" class="salesandinv.Admincheckout"/>
+        <method signature="CustomerTest.CustomerpageTest()[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" name="CustomerpageTest" class="salesandinv.CustomerTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-04-10T04:04:37Z" name="Test" finished-at="2025-04-10T04:05:41Z" duration-ms="64224">
+    <test started-at="2025-04-10T10:46:06 IST" name="Test-1" finished-at="2025-04-10T10:47:29 IST" duration-ms="83305">
       <class name="salesandinv.suppiler">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.suppiler@27216cd]" started-at="2025-04-10T04:05:10Z" name="configBC" finished-at="2025-04-10T04:05:12Z" duration-ms="1498" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.suppiler@4f80542f]" started-at="2025-04-10T10:46:51 IST" name="configBC" finished-at="2025-04-10T10:46:52 IST" duration-ms="1153" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.suppiler@27216cd]" started-at="2025-04-10T04:05:12Z" name="configBM" finished-at="2025-04-10T04:05:13Z" duration-ms="802" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.suppiler@4f80542f]" started-at="2025-04-10T10:46:52 IST" name="configBM" finished-at="2025-04-10T10:46:54 IST" duration-ms="2538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="suppilerTest()[pri:0, instance:salesandinv.suppiler@27216cd]" started-at="2025-04-10T04:05:13Z" name="suppilerTest" finished-at="2025-04-10T04:05:35Z" duration-ms="22824" status="PASS">
+        <test-method signature="suppilerTest()[pri:0, instance:salesandinv.suppiler@4f80542f]" started-at="2025-04-10T10:46:54 IST" name="suppilerTest" finished-at="2025-04-10T10:47:16 IST" duration-ms="21829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suppilerTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.suppiler@27216cd]" started-at="2025-04-10T04:05:35Z" name="configAC" finished-at="2025-04-10T04:05:37Z" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.suppiler@4f80542f]" started-at="2025-04-10T10:47:16 IST" name="configAC" finished-at="2025-04-10T10:47:18 IST" duration-ms="1295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.suppiler@27216cd]" started-at="2025-04-10T04:05:35Z" name="configAM" finished-at="2025-04-10T04:05:35Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.suppiler@4f80542f]" started-at="2025-04-10T10:47:16 IST" name="configAM" finished-at="2025-04-10T10:47:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
       </class> <!-- salesandinv.suppiler -->
-      <class name="salesandinv.Deleteproduct">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Deleteproduct@78d6692f]" started-at="2025-04-10T04:04:47Z" name="configBC" finished-at="2025-04-10T04:04:49Z" duration-ms="1797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Deleteproduct@78d6692f]" started-at="2025-04-10T04:04:49Z" name="configBM" finished-at="2025-04-10T04:04:50Z" duration-ms="881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="DeleteproductTest()[pri:0, instance:salesandinv.Deleteproduct@78d6692f]" started-at="2025-04-10T04:04:50Z" name="DeleteproductTest" finished-at="2025-04-10T04:04:50Z" duration-ms="392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteproductTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Deleteproduct@78d6692f]" started-at="2025-04-10T04:04:50Z" name="configAM" finished-at="2025-04-10T04:04:50Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Deleteproduct@78d6692f]" started-at="2025-04-10T04:04:50Z" name="configAC" finished-at="2025-04-10T04:04:52Z" duration-ms="1502" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- salesandinv.Deleteproduct -->
-      <class name="salesandinv.Login">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Login@60129b9a]" started-at="2025-04-10T04:04:43Z" name="configBC" finished-at="2025-04-10T04:04:45Z" duration-ms="1506" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Login@60129b9a]" started-at="2025-04-10T04:04:45Z" name="configBM" finished-at="2025-04-10T04:04:46Z" duration-ms="776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="LoginTest()[pri:0, instance:salesandinv.Login@60129b9a]" started-at="2025-04-10T04:04:46Z" name="LoginTest" finished-at="2025-04-10T04:04:46Z" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Login@60129b9a]" started-at="2025-04-10T04:04:46Z" name="configAC" finished-at="2025-04-10T04:04:47Z" duration-ms="1346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Login@60129b9a]" started-at="2025-04-10T04:04:46Z" name="configAM" finished-at="2025-04-10T04:04:46Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-      </class> <!-- salesandinv.Login -->
       <class name="salesandinv.AddToCart">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.AddToCart@558bdf1f]" started-at="2025-04-10T04:05:37Z" name="configBC" finished-at="2025-04-10T04:05:38Z" duration-ms="1525" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.AddToCart@60bd273d]" started-at="2025-04-10T10:47:18 IST" name="configBC" finished-at="2025-04-10T10:47:19 IST" duration-ms="1247" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.AddToCart@558bdf1f]" started-at="2025-04-10T04:05:38Z" name="configBM" finished-at="2025-04-10T04:05:39Z" duration-ms="887" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.AddToCart@60bd273d]" started-at="2025-04-10T10:47:19 IST" name="configBM" finished-at="2025-04-10T10:47:23 IST" duration-ms="3889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="AddToCartTest()[pri:0, instance:salesandinv.AddToCart@558bdf1f]" started-at="2025-04-10T04:05:39Z" name="AddToCartTest" finished-at="2025-04-10T04:05:40Z" duration-ms="462" status="PASS">
+        <test-method signature="AddToCartTest()[pri:0, instance:salesandinv.AddToCart@60bd273d]" started-at="2025-04-10T10:47:23 IST" name="AddToCartTest" finished-at="2025-04-10T10:47:28 IST" duration-ms="5119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.AddToCart@558bdf1f]" started-at="2025-04-10T04:05:40Z" name="configAM" finished-at="2025-04-10T04:05:40Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.AddToCart@60bd273d]" started-at="2025-04-10T10:47:28 IST" name="configAM" finished-at="2025-04-10T10:47:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.AddToCart@558bdf1f]" started-at="2025-04-10T04:05:40Z" name="configAC" finished-at="2025-04-10T04:05:41Z" duration-ms="1518" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.AddToCart@60bd273d]" started-at="2025-04-10T10:47:28 IST" name="configAC" finished-at="2025-04-10T10:47:29 IST" duration-ms="1290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
       </class> <!-- salesandinv.AddToCart -->
-      <class name="salesandinv.Checkout">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Checkout@5c2375a9]" started-at="2025-04-10T04:04:37Z" name="configBC" finished-at="2025-04-10T04:04:39Z" duration-ms="2196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Checkout@5c2375a9]" started-at="2025-04-10T04:04:39Z" name="configBM" finished-at="2025-04-10T04:04:40Z" duration-ms="913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="CheckoutTest()[pri:0, instance:salesandinv.Checkout@5c2375a9]" started-at="2025-04-10T04:04:40Z" name="CheckoutTest" finished-at="2025-04-10T04:04:42Z" duration-ms="1806" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckoutTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Checkout@5c2375a9]" started-at="2025-04-10T04:04:42Z" name="configAM" finished-at="2025-04-10T04:04:42Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Checkout@5c2375a9]" started-at="2025-04-10T04:04:42Z" name="configAC" finished-at="2025-04-10T04:04:43Z" duration-ms="1357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- salesandinv.Checkout -->
       <class name="salesandinv.Admincheckout">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Admincheckout@492691d7]" started-at="2025-04-10T04:05:06Z" name="configBC" finished-at="2025-04-10T04:05:08Z" duration-ms="1545" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Admincheckout@534a5a98]" started-at="2025-04-10T10:46:28 IST" name="configBC" finished-at="2025-04-10T10:46:30 IST" duration-ms="1244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Admincheckout@492691d7]" started-at="2025-04-10T04:05:08Z" name="configBM" finished-at="2025-04-10T04:05:09Z" duration-ms="867" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Admincheckout@534a5a98]" started-at="2025-04-10T10:46:30 IST" name="configBM" finished-at="2025-04-10T10:46:39 IST" duration-ms="9579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="AdmincheckoutTest()[pri:0, instance:salesandinv.Admincheckout@492691d7]" started-at="2025-04-10T04:05:09Z" name="AdmincheckoutTest" finished-at="2025-04-10T04:05:09Z" duration-ms="371" status="PASS">
+        <test-method signature="AdmincheckoutTest()[pri:0, instance:salesandinv.Admincheckout@534a5a98]" started-at="2025-04-10T10:46:39 IST" name="AdmincheckoutTest" finished-at="2025-04-10T10:46:49 IST" duration-ms="10177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdmincheckoutTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Admincheckout@492691d7]" started-at="2025-04-10T04:05:09Z" name="configAC" finished-at="2025-04-10T04:05:10Z" duration-ms="1428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Admincheckout@492691d7]" started-at="2025-04-10T04:05:09Z" name="configAM" finished-at="2025-04-10T04:05:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Admincheckout@534a5a98]" started-at="2025-04-10T10:46:49 IST" name="configAM" finished-at="2025-04-10T10:46:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Admincheckout@534a5a98]" started-at="2025-04-10T10:46:49 IST" name="configAC" finished-at="2025-04-10T10:46:51 IST" duration-ms="1327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
       </class> <!-- salesandinv.Admincheckout -->
       <class name="salesandinv.CustomerTest">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" started-at="2025-04-10T04:04:52Z" name="configBC" finished-at="2025-04-10T04:04:53Z" duration-ms="1462" status="PASS">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" started-at="2025-04-10T10:46:06 IST" name="configBC" finished-at="2025-04-10T10:46:08 IST" duration-ms="1832" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" started-at="2025-04-10T04:04:53Z" name="configBM" finished-at="2025-04-10T04:04:54Z" duration-ms="901" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" started-at="2025-04-10T10:46:08 IST" name="configBM" finished-at="2025-04-10T10:46:09 IST" duration-ms="1592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="CustomerpageTest()[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" started-at="2025-04-10T04:04:54Z" name="CustomerpageTest" finished-at="2025-04-10T04:04:55Z" duration-ms="1171" status="PASS">
+        <test-method signature="CustomerpageTest()[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" started-at="2025-04-10T10:46:09 IST" name="CustomerpageTest" finished-at="2025-04-10T10:46:27 IST" duration-ms="17848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CustomerpageTest -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" started-at="2025-04-10T04:04:55Z" name="configAC" finished-at="2025-04-10T04:04:57Z" duration-ms="1301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.CustomerTest@7a55af6b]" started-at="2025-04-10T04:04:55Z" name="configAM" finished-at="2025-04-10T04:04:55Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" started-at="2025-04-10T10:46:27 IST" name="configAM" finished-at="2025-04-10T10:46:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.CustomerTest@73e9cf30]" started-at="2025-04-10T10:46:27 IST" name="configAC" finished-at="2025-04-10T10:46:28 IST" duration-ms="1306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
       </class> <!-- salesandinv.CustomerTest -->
-      <class name="salesandinv.Logout">
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:salesandinv.Logout@3d9c13b5]" started-at="2025-04-10T04:04:57Z" name="configBC" finished-at="2025-04-10T04:04:58Z" duration-ms="1547" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:salesandinv.Logout@3d9c13b5]" started-at="2025-04-10T04:04:58Z" name="configBM" finished-at="2025-04-10T04:04:59Z" duration-ms="871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="LogoutTest()[pri:0, instance:salesandinv.Logout@3d9c13b5]" started-at="2025-04-10T04:04:59Z" name="LogoutTest" finished-at="2025-04-10T04:05:05Z" duration-ms="5595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogoutTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:salesandinv.Logout@3d9c13b5]" started-at="2025-04-10T04:05:05Z" name="configAM" finished-at="2025-04-10T04:05:05Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:salesandinv.Logout@3d9c13b5]" started-at="2025-04-10T04:05:05Z" name="configAC" finished-at="2025-04-10T04:05:06Z" duration-ms="1387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- salesandinv.Logout -->
-    </test> <!-- Test -->
+    </test> <!-- Test-1 -->
   </suite> <!-- Suite -->
 </testng-results>

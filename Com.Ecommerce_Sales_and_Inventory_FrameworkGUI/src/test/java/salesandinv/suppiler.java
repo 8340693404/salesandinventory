@@ -38,11 +38,11 @@ public class suppiler extends BaseClass{
 		 WebElement dd=driver.findElement(By.name("province"));
 		 Select obj = new Select(dd);
 		 obj.selectByVisibleText("Abra");
-		 Thread.sleep(1000);
+		// Thread.sleep(1000);
 		 WebElement dd1=driver.findElement(By.name("city"));
 		 Select obj1 = new Select(dd1);
 		 obj.selectByVisibleText("Bucay");
-		 Thread.sleep(1000);
+		 //Thread.sleep(1000);
 		 
 		 
 		// ExcelUtility eLib=new ExcelUtility();

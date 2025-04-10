@@ -31,8 +31,9 @@ public class BaseClass {
 	public void configBC(@Optional("chrome") String browser) throws Throwable  {
 		System.out.println("====Launch the BROWSER===");
 		
-		String BROWSER = flib.getDataFromPropertiesFile("browser");
-				
+		//String BROWSER = flib.getDataFromPropertiesFile("browser");
+		String BROWSER=browser;
+			System.out.println("Browser:"+BROWSER);
 	    if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("firefox")) {
